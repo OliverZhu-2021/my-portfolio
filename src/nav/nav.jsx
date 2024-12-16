@@ -4,10 +4,7 @@ import astronautHelmet from '../assets/astronaut-helmet.png';
 import deadEye from '../assets/dead-eye.png';
 import stack from '../assets/stack.png';
 import envelope from '../assets/envelope.png';
-
-const NavWrapper = styled.div`
-  background: blue;
-`;
+import '../style/nav.css'
 
 
 const Nav = () => {
@@ -64,7 +61,7 @@ const Nav = () => {
   };
 
   return(
-    <NavWrapper>
+    <>
       <nav className={`nav ${navPositionClass}`}>
         {
           renderNavLink(
@@ -100,7 +97,7 @@ const Nav = () => {
         }
 
       </nav>
-    </NavWrapper>
+    </>
   )
 }
 
