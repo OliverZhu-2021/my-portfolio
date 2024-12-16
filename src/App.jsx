@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './nav/nav';
 import styled, { createGlobalStyle } from 'styled-components';
 import About from './about-components/about';
-import Skills from './skills-components/skills';
-import Projects from './projects-components/projects';
-import Contact from './contact-components/contact';
+import Skills from './skills/skills';
+import Projects from './projects/projects';
+import Contact from './contact/contact';
+import Background from './background/background';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -47,6 +48,7 @@ const App = () => {
       <BrowserRouter>
         <GlobalStyle />
         <Nav />
+        <Background />
         <Routes>
           <Route path='/' element={<About />}/>
           <Route path='/skills' element={<Skills />}/>
