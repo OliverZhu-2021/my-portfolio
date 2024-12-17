@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './nav/nav';
 import styled, { createGlobalStyle } from 'styled-components';
-import About from './about-components/about';
+import About from './about/about';
 import Skills from './skills/skills';
 import Projects from './projects/projects';
 import Contact from './contact/contact';
 import Background from './background/background';
+import PlayerStats from './player-stats/player-stats';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -55,6 +56,7 @@ const App = () => {
           <Route path='/projects' element={<Projects />}/>
           <Route path='/contact' element={<Contact />}/>
         </Routes>
+        <PlayerStats/>
       </BrowserRouter>
       
     </>
