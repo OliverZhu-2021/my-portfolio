@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Avatar from '../avatar/avatar';
+import AboutMenu from './about-menu';
 
 export default function About() {
   return(
     <>
-      about
+      <Avatar page="about" />
+      <AboutMenu />
     </>
   )
 }

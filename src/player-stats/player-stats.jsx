@@ -63,8 +63,6 @@ const SpanThin = styled.span`
 
 `;
 
-
-
 const PlayerStats = () => {
   return (
     <PlayerStatsWrapper>
