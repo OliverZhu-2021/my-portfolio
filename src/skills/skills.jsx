@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Avatar from '../avatar/avatar';
+import SkillsMenu from './skills-menu';
 
 export default function Skills() {
   return(
     <>
-      skills
+      <Avatar page="skills" />
+      <SkillsMenu />
     </>
   )
 }
