@@ -6,6 +6,7 @@ import subheadingData from './subheading-data';
 import personalIcon from '../assets/moebius-triangle.png';
 import educationIcon from '../assets/upgrade.png';
 import careerIcon from '../assets/triple-corn.png' 
+import '../style/menu.css'
 
 
 const AboutMenu = () => {
@@ -13,12 +14,12 @@ const AboutMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(1);
   const [activeSubheading, setActiveSubheading] = useState(1);
 
-  handleMenuItemClick = (menuItem) => {
+  const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem);
     setActiveSubheading(1);
   };
 
-  handleSubheadingClick = (subheading) => {
+  const handleSubheadingClick = (subheading) => {
     setActiveSubheading(subheading);
   };
 

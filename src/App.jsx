@@ -19,14 +19,14 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     font-family: "Russo One", sans-serif;
     -webkit-tap-highlight-color: transparent;
-    background: #666
+    color: white;
   }
 
   :root {
     --purple: #540351;
     --blue: #3627b1;
     --cyan: #25afce;
-    --transparent: #000000;
+    --transparent: rgba(0, 0, 0, 0);
     --radius-left: 3rem 0 0 3rem;
     --radius-right: 0 3rem 3rem 0;
   }
