@@ -35,7 +35,7 @@ const projects = {
     github: 'https://github.com',
     demo: 'https://netlify.com',
   },
-  1: {
+  3: {
     title: 'Food delivery App',
     image: projectThree,
     description: (

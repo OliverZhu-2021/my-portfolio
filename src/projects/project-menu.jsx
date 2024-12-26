@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import projects from './project-data';
 import { useState } from 'react';
-import '../style/project-menu.css'
+import '../style/project-menu.css';
 
 const ProjectMenu = () => {
   const [activeProject, setActiveProject] = useState(1);
