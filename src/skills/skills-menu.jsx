@@ -38,7 +38,7 @@ const SkillsMenu = () => {
           skills[activeMenuItem].map((skill, index) => (
             <div
               key={index}
-              className={`skills-sub-container-${activeMenuItem}`}
+              className={`skill-sub-container-${activeMenuItem}`}
             >
               <h3>{skill.title}</h3>
               <div className='level-container'>
