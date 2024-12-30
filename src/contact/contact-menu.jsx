@@ -40,17 +40,17 @@ const ContactMenu = () => {
       message: 'Message: ' + DOMPurify.sanitize(message),
     }
 
-    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const userID = process.env.REACT_APP_EMAILJS_USER_ID;
+    const serviceID = import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_REACT_APP_EMAILJS_USER_ID;
 
     emailjs
-    .send(serviceID, templateID, sanitizeData, useerID)
+    .send(serviceID, templateID, sanitizeData, userID)
     .then((res) => {
       console.log('Email is sent successfully!', res.text);
       setFormData(initialState);
       setErrors({});
-      setIsSent(false);
+      setIsSent(true);
     })
     .catch((err) => {
       console.error('Email sending failed', err);
@@ -138,7 +138,7 @@ const ContactMenu = () => {
                   <span className="error-message">{errors.message}</span>
                 )}
             </div>
-            <button type="submit" disabled={isLoading}>{isLoading ? 'SENDING' : 'SUBMIT'}</button>
+            <button type="submit" disabled={isLoading}>{isLoading ? 'SENDING...' : 'SUBMIT'}</button>
           </form>
         )}
         {isSent && (
