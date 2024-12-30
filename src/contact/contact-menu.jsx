@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import DOMPurify from 'dompurify';
+import '../style/contact.css';
 
 const ContactMenu = () => {
   const initialState = {
